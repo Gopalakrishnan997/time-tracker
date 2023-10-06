@@ -32,13 +32,13 @@ jobs:
              <server>
                <id>test</id>
                <username>gkinfrastructureascode</username>
-               <password>6c2tzx5deumfv3xhvnz2byxfiqf7tm4jinpjd2g32hd5wawxo6oq</password>
+               <password>a7mzdl4mnzgyqsbmgkxpo6g6q4yq4lbznniva7d44hbj2lbzipda</password>
              </server>
            </servers>
          </settings>" > $HOME/.m2/settings.xml
 
         env:
-          AZURE_DEVOPS_TOKEN: 6c2tzx5deumfv3xhvnz2byxfiqf7tm4jinpjd2g32hd5wawxo6oq
+          AZURE_DEVOPS_TOKEN: a7mzdl4mnzgyqsbmgkxpo6g6q4yq4lbznniva7d44hbj2lbzipda
 
       - name: Build with Maven
         run: mvn clean package
