@@ -47,10 +47,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+    - name: Authenticate with Azure DevOps
+      run: | 
+         mkdir ~/.m2
 
     - name: Authenticate with Azure DevOps
-        
-
       run: |
          echo "<settings>
            <mirrors>
